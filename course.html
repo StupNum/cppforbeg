@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course</title>
+    <meta name="author" content="StupNum">
+    <link rel="stylesheet" href="css/style_c.css">
+    <link rel="stylesheet" href="css/left-nav-style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 
+    Скрытый checkbox, отвечающий за переключение панели, должен быть в верхней части документа, лучше сразу после тега `<body>`
+
+    `id` атрибут предназначен для связки с атрибутом `for` тега <label>
+
+    Атрибут `hidden` указывает состояние «скрытый» у текущего элемента
+    -->
+    <input type="checkbox" id="nav-toggle" hidden="">
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: 
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick=""></label>
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo"> 
+            <a href="index.html">CPP FOR BEGINNERS</a> 
+        </h2>
+        <ul>
+            <li><a href="course.html">Введение в курс</a>
+            </li><li><a href="course.html">Computer Science</a>
+            </li><li><a href="course.html">Assembler</a>
+            </li><li><a href="course.html">Структуры данных</a>
+            </li><li><a href="course.html">Устройство компьютера</a>
+            </li><li><a href="course.html">Векторные инструкции</a>
+            </li><li><a href="course.html">Алгоритмизация</a> 
+        </li></ul>
+    </nav>
+    <main role="main">
+        <article>
+            <header>
+                <h1 class="header__title">Введение в курс:</h1>
+                <h2>Кто такой C++ разработчик?</h2> 
+            </header>
+            <section>
+               <p style="text-align: center;">
+                </p><p>Этот курс создан для тех, кого интересует низкоуровневая разработка, GPGPU разработка, устройство компютера и глубинное понимаение всех процессов проходящих при исполнении любого exe файла, компиляции.
+                </p><p>Мы разберем основы алгоритмизации, освоим простейшие ассемблерные инструкции, поймем для чего существует процессорные регистры и кеши, напишем первую функции с ипользованием SSE и AVX.</p>
+                </section>
+            <hr>
+            <footer>
+                <p><a href="index.html">←Вернуться к лендингу</a>
+                </p><p>сделано с любовью - <a href="mailto:stupnum69team@gmail.com">StupNum's team</a>
+            </p></footer>
+        </article>
+    </main>
+
+
+</body></html>
